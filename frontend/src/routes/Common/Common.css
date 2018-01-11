@@ -1,0 +1,46 @@
+/**
+ * 无样式的 button
+ * 用于表格的 操作 按钮等
+ */
+.tableCellAction {
+    border: 0;
+    margin: auto 2px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    color: #108ee9;
+}
+
+.tableCellAction:hover, .tableCellAction:focus {
+    color: #49a9ee;
+    outline: none;
+}
+
+.help-search-center {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.help-search-center h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.help-search-center button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.help-one-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-one-msg h2 {
+  margin-bottom: 8px;
+}
+
+.help-one-msg span {
+  margin-bottom: 8px;
+}

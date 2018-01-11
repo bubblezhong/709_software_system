@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ 
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ 
+
+    <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test?serverTimezone=UTC"/>
+
+        <property name="jdbcDriver" value="com.mysql.jdbc.Driver"/>
+
+        <property name="jdbcUsername" value="root"/>
+
+        <property name="jdbcPassword" value="root"/>
+
+        <!-- 自动构建数据库表，设置value="true"，第一次启动建表；设置value="drop-create"，每次启动时建新表-> -->
+        <property name="databaseSchemaUpdate" value="true" />
+    </bean>
+
+    <!--以下是使用H2作为数据库，测试的时候非常好用！-->
+
+  <!--   <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
+
+        <property name="jdbcUrl" value="jdbc:h2:mem:activiti;DB_CLOSE_DELAY=1000" />
+
+        <property name="jdbcUrl" value="jdbc:h2:file:~/wayhb;AUTO_SERVER=TRUE" />
+
+        <property name="jdbcDriver" value="org.h2.Driver" />
+
+        <property name="jdbcUsername" value="sa" />
+
+        <property name="jdbcPassword" value="" />
+
+        Database configurations
+
+        <property name="databaseSchemaUpdate" value="true" />
+
+        job executor configurations
+
+        <property name="jobExecutorActivate" value="false" /> 
+
+    </bean>
+ -->
+</beans>

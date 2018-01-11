@@ -1,0 +1,10 @@
+# Node
+NodeJH
+frontend/config/
+frontend/scripts/
+# frontend/src/routes/SystemSetting/
+# frontend/src/routes/UserSetting/
+# frontend/src/routes/DataDictionary/
+# frontend/src/routes/utils/
+# frontend/src/routes/WebIndex/
+React

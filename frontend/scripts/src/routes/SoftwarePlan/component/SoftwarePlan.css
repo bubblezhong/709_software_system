@@ -1,0 +1,102 @@
+.ant-fullcalendar-fullscreen .ant-fullcalendar-month,
+.ant-fullcalendar-fullscreen .ant-fullcalendar-date{
+	margin: 0;
+	border-left: 1px #e9e9e9 solid;
+	border-right: 1px #e9e9e9 solid;
+}
+table.ant-fullcalendar-table{
+	border-bottom: 1px #e9e9e9 solid;
+}
+.ant-fullcalendar-fullscreen .ant-fullcalendar-value{
+	text-align: left;
+}
+.ant-fullcalendar-fullscreen .ant-fullcalendar-column-header{
+	border-top: 2px solid #e9e9e9;
+  border-right: 2px solid #e9e9e9;
+	border-left: 1px solid #e9e9e9;
+	text-align: left;
+}
+.ant-fullcalendar-header{
+	text-align: center;
+}
+.PlanRemind_events{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.PlanRemind_events span{
+	font-size: 20px;
+}
+/*.abc{
+	background-color: #cccfff;
+}*/
+.PlanDetailInfo_title{
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	background-color: #edf7fc;
+	padding: 16px 16px 16px 20px;
+
+}
+.PlanDetailInfo_content{
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.PlanDetailInfo_content_bottom{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.PlanDetailInfo_content label{
+	font-size: 16px;
+	position: relative;
+  top: 8px;
+}
+.PlanDetailInfo_contentRead label{
+	font-size: 16px;
+}
+.PlanDetailInfo_content_bottom label{
+	font-size: 16px;
+}
+.PlanDetailInfo_cointainer{
+	border-radius: 8px;
+}
+.PlanDetailStep_container{
+	padding: 10px;
+	border: 1px solid #ccc;
+  border-radius: 8px;
+	margin-top: 20px;
+
+}
+.PlanDetailStep_title{
+	font-size: 16px;
+	background-color: #edf7fc;
+  padding: 16px 16px 16px 20px;
+  margin-bottom: 20px;
+}
+.PlanDetailStep_items{
+	padding-left: 10px;
+	height:60px;
+	line-height: 60px;
+	border-bottom: 1px #fff solid;
+	font-size: 14px;
+}
+.PlanDetailStepEdit_btn{
+	margin-top: 180px;
+}
+.PlanDetailStepEdit_btn button{
+	margin-top: 10px;
+}
+.PlanDetailStepEdit_border{
+  height: 102%;
+  width: 120%;
+  border: 1px dashed #ccc;
+  position: absolute;
+  top: -8px;
+  left:-30%;
+}
+.PlanDetailStepEditCardEditState_btn{
+	margin-top: 240px;
+}
+.PlanDetailStepEditCardEditState_btn button {
+	margin-right: 10px;
+}

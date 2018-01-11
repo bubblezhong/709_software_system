@@ -1,0 +1,30 @@
+.info p {
+  margin: 10px;
+}
+.ant-rows{
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+.ant-form{
+	padding: 10px;
+	padding-bottom: 0;
+	border: 1px solid #ccc;
+}
+/*.ant-btn{
+	 margin-left:48%; 
+}*/
+.headers{
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 5px;
+	background-color: #edf7fc;
+}
+.headers span{
+	line-height: 50px;
+}
+/*body .ant-layout-content{
+	background-color: #fff !important;
+}*//*
+.ant-col-4{
+	width: 30%;
+}*/

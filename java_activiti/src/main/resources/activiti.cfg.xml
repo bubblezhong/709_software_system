@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">  
+  
+  <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">  
+  
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@192.168.2.113:1521:helowin" />  
+    <property name="jdbcDriver" value="oracle.jdbc.OracleDriver" />  
+    <property name="jdbcUsername" value="zyz" />  
+    <property name="jdbcPassword" value="zyz123456" />  
+  
+    <property name="databaseSchemaUpdate" value="drop-create" />  
+  	<property name="databaseSchema" value="ACT"/>
+  </bean>  
+  
+</beans>  

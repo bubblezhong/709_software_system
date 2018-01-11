@@ -1,0 +1,38 @@
+{
+  "name": "backend-test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "supervisor ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "~1.3.5",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.6",
+    "express": "~4.13.1",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.15.1",
+    "jade": "~1.11.0",
+    "mongoose": "^4.8.2",
+    "morgan": "~1.6.1",
+    "mysql": "^2.13.0",
+    "serve-favicon": "~2.3.0",
+    "supervisor": "^0.12.0"
+  },
+  "description": "+ 端口在 config/config.js 中配置，默认为 5000 + 统一在 app.js 中开启跨域访问 + 统一返回 JSON",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "http://114.215.30.227/KevenChao/SoftwareManage17"
+  },
+  "keywords": [
+    "software",
+    "management"
+  ],
+  "author": "veily",
+  "license": "ISC"
+}

@@ -1,0 +1,80 @@
+.UnitDetail_return{
+	color: #666;
+	font-size: 16px;
+	font-weight: 500;
+	float: left;
+	text-decoration: none;
+}
+.UnitDetail_reflash{
+  width: 85px;
+  height: 30px;
+  float: right;
+}
+.UnitDetail_detail{
+	overflow: auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.uniteDetail_headerpic{
+	width: 20%;
+	float:left;
+}
+.uniteDetail_content{
+	float: right;
+	width: 80%;
+}
+.UnitDetail_InfoStatistics{
+	/*height: 35px;*/
+	padding-top: 20px;
+  padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	line-height: 35px;
+}
+.UnitDetail_InfoStatistics h2{
+	display: inline-block;
+	width:20%;
+}
+.UnitDetail_contentli{
+	font-size: 18px;
+  display: inline-block;
+  width:20%;
+}
+.UnitDetail_contentli span{
+	margin-right: 4%;
+}
+.UserSoftware_title{
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-size: 14px;
+}
+.UserSoftware_title span{
+	margin-left: 10px;
+}
+.UserSoftware_title span {
+	cursor: default;
+}
+.UnitInfo_Btn{
+	width: 16.6%;
+	height: 40px;
+	max-width: 100px;          
+}
+.UnitInfo_Search{
+  float: right;
+  height: 40px;
+}
+.UnitDetail_headerpic{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+	background-color: #4d79fa;
+	display:inline-block;
+	font-size:36px; 
+	margin-left: 5%;
+	position: relative;
+	color:#fff;
+}
+.UnitDetail_headerpic span {
+  position: absolute;
+  top: 48px;
+  left:39px;
+}

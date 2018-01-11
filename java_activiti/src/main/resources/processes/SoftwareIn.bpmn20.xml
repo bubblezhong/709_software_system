@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
+  <process id="SoftwareIn" name="软件入库" isExecutable="true">
+    <startEvent id="startevent1" name="Start"></startEvent>
+    <endEvent id="endevent1" name="End"></endEvent>
+    <userTask id="入库申请" name="入库申请" activiti:assignee="#{applicant}"></userTask>
+    <sequenceFlow id="flow2" sourceRef="startevent1" targetRef="入库申请"></sequenceFlow>
+    <userTask id="入库审批" name="入库审批" activiti:async="true" activiti:assignee="#{reviewer}"></userTask>
+    <sequenceFlow id="flow3" sourceRef="入库申请" targetRef="入库审批"></sequenceFlow>
+    <sequenceFlow id="flow4" sourceRef="入库审批" targetRef="endevent1">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status.equals("不通过")}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="入库登记" name="入库登记" activiti:assignee="#{registrant}"></userTask>
+    <sequenceFlow id="flow5" sourceRef="入库审批" targetRef="入库登记">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status.equals("通过")}]]></conditionExpression>
+    </sequenceFlow>
+    <userTask id="入库验收" name="入库验收" activiti:assignee="#{accept}"></userTask>
+    <sequenceFlow id="flow6" sourceRef="入库登记" targetRef="入库验收"></sequenceFlow>
+    <endEvent id="endevent2" name="End"></endEvent>
+    <endEvent id="endevent3" name="End"></endEvent>
+    <sequenceFlow id="flow9" sourceRef="入库验收" targetRef="endevent3">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status.equals("不通过")}]]></conditionExpression>
+    </sequenceFlow>
+    <sequenceFlow id="flow10" sourceRef="入库验收" targetRef="endevent2">
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${status.equals("通过")}]]></conditionExpression>
+    </sequenceFlow>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_SoftwareIn">
+    <bpmndi:BPMNPlane bpmnElement="SoftwareIn" id="BPMNPlane_SoftwareIn">
+      <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="50.0" y="210.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent1" id="BPMNShape_endevent1">
+        <omgdc:Bounds height="35.0" width="35.0" x="315.0" y="320.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="入库申请" id="BPMNShape_入库申请">
+        <omgdc:Bounds height="55.0" width="105.0" x="130.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="入库审批" id="BPMNShape_入库审批">
+        <omgdc:Bounds height="55.0" width="105.0" x="280.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="入库登记" id="BPMNShape_入库登记">
+        <omgdc:Bounds height="55.0" width="105.0" x="430.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="入库验收" id="BPMNShape_入库验收">
+        <omgdc:Bounds height="55.0" width="105.0" x="580.0" y="200.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent2" id="BPMNShape_endevent2">
+        <omgdc:Bounds height="35.0" width="35.0" x="730.0" y="210.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="endevent3" id="BPMNShape_endevent3">
+        <omgdc:Bounds height="35.0" width="35.0" x="615.0" y="320.0"></omgdc:Bounds>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge bpmnElement="flow2" id="BPMNEdge_flow2">
+        <omgdi:waypoint x="85.0" y="227.0"></omgdi:waypoint>
+        <omgdi:waypoint x="130.0" y="227.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow3" id="BPMNEdge_flow3">
+        <omgdi:waypoint x="235.0" y="227.0"></omgdi:waypoint>
+        <omgdi:waypoint x="280.0" y="227.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow4" id="BPMNEdge_flow4">
+        <omgdi:waypoint x="332.0" y="255.0"></omgdi:waypoint>
+        <omgdi:waypoint x="332.0" y="320.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow5" id="BPMNEdge_flow5">
+        <omgdi:waypoint x="385.0" y="227.0"></omgdi:waypoint>
+        <omgdi:waypoint x="430.0" y="227.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">
+        <omgdi:waypoint x="535.0" y="227.0"></omgdi:waypoint>
+        <omgdi:waypoint x="580.0" y="227.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow9" id="BPMNEdge_flow9">
+        <omgdi:waypoint x="632.0" y="255.0"></omgdi:waypoint>
+        <omgdi:waypoint x="632.0" y="320.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="flow10" id="BPMNEdge_flow10">
+        <omgdi:waypoint x="685.0" y="227.0"></omgdi:waypoint>
+        <omgdi:waypoint x="730.0" y="227.0"></omgdi:waypoint>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

@@ -1,0 +1,34 @@
+.RetireDetail_stepsContent{
+	overflow: auto;
+  margin-top: 16px;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  height: 620px;
+  padding: 20px;
+}
+.RetireDetail_stepsContent {
+	overflow: auto;
+  margin-top: 16px;
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  height: 620px;
+  padding: 20px;
+}
+.RetireDetail_stepsContent_btn{
+	width: 120px;
+	position: absolute;
+  top:100px;
+  left:30px;
+}
+.RetireDetail_stepsContent_btn button{
+	width: 120px;
+	height: 30px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	border: 1px solid #c4c4c4;
+}
+.RetireDetail_step .ant-steps-main .ant-steps-title{
+	position: relative;
+  top: 30px;
+  left: -70%;
+}

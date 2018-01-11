@@ -1,0 +1,33 @@
+const dictionary = [
+  { id: 100, key: 'status_0', value: '激活' },
+  { id: 101, key: 'status_1', value: '未激活' },
+  { id: 102, key: 'status_2', value: '已删除' },
+  { id: 103, key: 'important_level_1', value: '机密' },
+  { id: 104, key: 'important_level_2', value: '秘密' },
+  { id: 105, key: 'important_level_3', value: '内部公开' },
+  { id: 106, key: 'important_level_4', value: '公开' },
+  // { id: 107, key: 'status_0', value: '激活' },
+  // { id: 108, key: 'status_0', value: '激活' },
+  // { id: 109, key: 'status_0', value: '激活' },
+  // { id: 110, key: 'status_0', value: '激活' },
+  // { id: 111, key: 'status_0', value: '激活' },
+  // { id: 112, key: 'status_0', value: '激活' },
+  // { id: 113, key: 'status_0', value: '激活' },
+  // { id: 114, key: 'status_0', value: '激活' },
+  // { id: 115, key: 'status_0', value: '激活' },
+  // { id: 116, key: 'status_0', value: '激活' },
+  // { id: 117, key: 'status_0', value: '激活' },
+  // { id: 118, key: 'status_0', value: '激活' },
+  // { id: 119, key: 'status_0', value: '激活' },
+  // { id: 120, key: 'status_0', value: '激活' },
+  // { id: 121, key: 'status_0', value: '激活' },
+  // { id: 122, key: 'status_0', value: '激活' },
+  // { id: 123, key: 'status_0', value: '激活' },
+  // { id: 124, key: 'status_0', value: '激活' },
+  // { id: 125, key: 'status_0', value: '激活' },
+  // { id: 126, key: 'status_0', value: '激活' },
+  // { id: 127, key: 'status_0', value: '激活' },
+];
+
+
+module.exports = dictionary;

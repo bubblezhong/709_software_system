@@ -1,0 +1,30 @@
+.DeploymentSchemeDetail_headerpic{
+	width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f03;
+    display: inline-block;
+    font-size: 28px;
+    margin-left: 4%;
+    margin-top: 25px;
+    position: relative;
+    color: #fff;
+}
+.DeploymentSchemeDetail_headerpic span {
+	position: absolute;
+  top: 18px;
+  left: 30px;
+  display: inline-block;
+  width: 80px;
+}
+.DeploymentSchemeDetail_brief span:nth-child(even){
+	margin-right: 60px;
+}
+.DeploymentSchemeDetail_brief{
+	font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.DeploymentSchemeDetailFirst_editButton i{
+   margin-left: 10px;
+}

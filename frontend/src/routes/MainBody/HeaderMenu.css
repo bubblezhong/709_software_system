@@ -1,0 +1,10 @@
+.ant-badge {
+  margin-right: 16px;
+}
+.head {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  background: #eee;
+  display: inline-block;
+}

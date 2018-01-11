@@ -1,0 +1,117 @@
+{
+  "id": 1,
+  "category": "054a",
+  "group": [
+    {
+      "organization": [
+        {
+          "name": "529船",
+          "id": 529
+        },
+        {
+          "name": "57船",
+          "id": 57
+        }
+      ],
+      "software": [
+        {
+          "info": {
+            "name": "指控设备",
+            "id": 22
+          },
+          "position": "主控机",
+          "type": "船",
+          "modules": [
+            {
+              "name": "总体模块",
+              "id": 123,
+              "parent_id": 0
+            },
+            {
+              "name": "优化模块",
+              "id": 233,
+              "parent_id": 123
+            },
+            {
+              "name": "解算模块",
+              "id": 2334,
+              "parent_id": 123
+            }
+          ]
+        },
+        {
+          "info": {
+            "name": "调配设备",
+            "id": 24
+          },
+          "position": "驱动设备",
+          "type": "船",
+          "modules": [
+            {
+              "name": "总体模块",
+              "id": 123,
+              "parent_id": 0
+            },
+            {
+              "name": "解算模块",
+              "id": 2334,
+              "parent_id": 123
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "organization": [
+        {
+          "name": "577",
+          "id": 577
+        }
+      ],
+      "software": [
+        {
+          "info": {
+            "name": "指控设备",
+            "id": 22
+          },
+          "position": "导航设备",
+          "type": "船",
+          "modules": [
+            {
+              "name": "总体模块",
+              "id": 123,
+              "parent_id": 0
+            },
+            {
+              "name": "解算模块",
+              "id": 2334,
+              "parent_id": 0
+            }
+          ]
+        },
+        {
+          "info": {
+            "name": "调配设备",
+            "id": 24
+          },
+          "position": "有个设备",
+          "type": "船",
+          "modules": [
+            {
+              "name": "总体模块",
+              "id": 123,
+              "parent_id": 0
+            },
+            {
+              "name": "解算模块",
+              "id": 2334,
+              "parent_id": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "create_date": "2017-03-01 11:11:11",
+  "create_user": 12
+}

@@ -1,0 +1,9 @@
+.title {
+  font-size: 20px;
+  color: #fff;
+  width: 150px;
+}
+.headerMenu {
+  display: inline;
+  float: right;
+}

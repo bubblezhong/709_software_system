@@ -1,0 +1,21 @@
+{
+  "System": {
+    "Sidebar": {}
+  },
+  "SystemSetting": {
+    "Organization": {},
+    "User": {},
+    "Role": {},
+    "Authority": {},
+    "Dictionary": {}
+  },
+  "UserInfo": {
+    "Role": {},
+    "User": {}
+  },
+  "SoftwareDeployment": {
+    "DeploymentRequest": {},
+    "Allocation": {},
+    "AssignTasks": {}
+  }
+}

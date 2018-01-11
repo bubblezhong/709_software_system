@@ -1,0 +1,117 @@
+.uniteDetail_brief span{
+	margin-right: 10px; 
+}
+.SoftwareInfoDetail_brief{
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.SoftwareInfoDetail_brief span:nth-child(even){
+	margin-right: 20px; 
+}
+.uniteDetail_brief span:nth-child(odd){
+	font-weight: 900;
+}
+.UnitDetail_return{
+	color: #666;
+	font-size: 16px;
+	font-weight: 500;
+	float: left;
+	text-decoration: none;
+}
+.SoftwareInfoDetail_reflash{
+  width: 85px;
+  height: 30px;
+  float: right;
+  margin-right: 20px;
+}
+.SoftwareInfoDetail_detail{
+	overflow: auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.SoftwareInfoDetail_headerpic{
+	width: 20%;
+	float:left;
+}
+.SoftwareInfoDetail_content{
+	float: right;
+	width: 80%;
+	margin-right: 40px;
+}
+.SoftwareBasicInfo_brif{
+	font-size: 14px;
+	width:42%;
+	padding: 20px;
+	float: left;
+}
+.SoftwareBasicInfo_tree{
+	float:right;
+	width: 49%;
+	padding-top: 30px;
+	padding-left: 20%;
+}
+.SoftwareBasicInfo_tree h2{
+	margin-bottom: 10px;
+}
+.SoftwareBasicInfo_brif_content{
+	/*border-bottom: 1px solid #ccc;*/
+	margin-top: 30px;
+  padding-left: 60px
+}
+.SoftwareBasicInfo_brif_type{
+	display: inline-block;
+	width: 100px;
+
+}
+.SoftwareBasicInfo_tree_content{
+
+}
+.SoftwareVersion_changeformat{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.SoftwareVersion_changeformat button{
+  float:right;
+  margin-right: 20px;
+}
+.SoftwareInfoDetail_headerpic{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+	background-color: #ffa800;
+	display:inline-block;
+	font-size:36px; 
+	margin-left: 5%;
+	position: relative;
+	color:#fff;
+}
+.SoftwareInfoDetail_headerpic span {
+  position: absolute;
+  top: 48px;
+  left:39px;
+}
+.SoftwareVersionDetail_headerpic{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+	background-color: #ffa800;
+	display:inline-block;
+	font-size:36px; 
+	margin-left: 5%;
+	position: relative;
+	color:#fff;
+}
+.SoftwareVersionDetail_headerpic span {
+	position: absolute;
+  top: 20px;
+  left: 39px;
+  display: inline-block;
+  width: 100px;
+}
+.SoftwareBasicInfo_brif label {
+	font-size: 14px;
+}
+/*.moduleRelation .ant-col-14 .ant-form-item-control .ant-select-enabled span{
+	width:467px;
+}*/

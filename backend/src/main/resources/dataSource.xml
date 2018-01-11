@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans        
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context                
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+    <bean id="ObjectDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+        init-method="init" destroy-method="close">
+        <property name="url" value="jdbc:oracle:thin:@114.215.30.227:1521:orcl" />
+        <property name="username" value="Software" />
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="password" value="Zhoushanshan1988" />
+        <property name="initialSize" value="1" />
+        <property name="maxActive" value="100" />
+       <property name="testOnBorrow" value="false" />
+        <property name="maxWait" value="10000" />
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+        <property name="minIdle" value="1" />  
+    </bean> 
+    
+<!--     <bean id="ObjectDataSource" class="com.alibaba.druid.pool.DruidDataSource"
+        init-method="init" destroy-method="close">
+        <property name="url" value="jdbc:mysql://localhost:3306/test?serverTimezone=UTC" />
+        <property name="username" value="root" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="password" value="root" />
+    </bean>  -->
+</beans>
+
+

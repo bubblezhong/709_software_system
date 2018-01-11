@@ -1,0 +1,23 @@
+.CategoryDetail_headerpic, .CategoryVersionDetail_headerpic{
+	width:150px;
+	height:150px;
+	border-radius: 50%;
+	background-color: #ffa800;
+	display:inline-block;
+	font-size:36px; 
+	margin-left: 5%;
+	position: relative;
+	color:#fff;
+}
+.CategoryDetail_headerpic span {
+  position: absolute;
+  top: 48px;
+  left:39px;
+}
+.CategoryVersionDetail_headerpic span{
+  position: absolute;
+  top: 20px;
+  left: 39px;
+  display: inline-block;
+  width: 100px;
+}
